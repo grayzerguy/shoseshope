@@ -1,10 +1,12 @@
 import Footer from "../Footer/Footer";
 import { Header } from "../Header/Header";
 import Links from "../Links/Links";
-import YouTube from "../YouTube/YouTube";
+import { ShoesCard } from "../../HomeArea/ShoesCard/ShoesCard";
+import YouTube from "../../HomeArea/YouTube/YouTube";
 import "./Layout.css";
+import Home from "../../HomeArea/Home/Home";
 
- function Layout(): JSX.Element {
+function Layout(): JSX.Element {
     return (
         <div className="Layout">
 
@@ -12,9 +14,14 @@ import "./Layout.css";
             <aside>
                 <Links />
             </aside>
-            <main><YouTube />
+            <main>
+
+                <Home/>
+
             </main>
             <footer><Footer /></footer>
+
+
 
         </div>
     );

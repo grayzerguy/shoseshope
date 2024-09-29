@@ -1,18 +1,24 @@
+import { ShoesCard } from "../ShoesCard/ShoesCard";
 import "./YouTube.css";
+
+
 
 
 function YouTube(): JSX.Element {
     return (
-        <div className="YouTube ">
+        <div className="YouTube Box ">
             <p>
 
                 {isFirstDayOfMonth() ? <span>Pizza</span> : <span></span>}
 
             </p>
-            <iframe width="560"
-                height="315"
+            <iframe
                 src="https://www.youtube.com/embed/tgbNymZ7vqY">
             </iframe>
+
+
+
+
 
         </div>
     );
