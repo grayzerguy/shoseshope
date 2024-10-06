@@ -1,4 +1,4 @@
-import { ShoesCard } from "../ShoesCard/ShoesCard";
+
 import "./YouTube.css";
 
 

@@ -1,6 +1,6 @@
 import Footer from "../Footer/Footer";
 import { Header } from "../Header/Header";
-import Links from "../Links/Links";
+import Links from "../Menu/Menu";
 import { ShoesCard } from "../../HomeArea/ShoesCard/ShoesCard";
 import YouTube from "../../HomeArea/YouTube/YouTube";
 import "./Layout.css";
