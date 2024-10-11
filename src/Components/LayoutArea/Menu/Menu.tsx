@@ -17,9 +17,11 @@ export function Menu(): JSX.Element {
             <br />
             <NavLink to={"/products"}>מוצרים</NavLink>
             <br />
-            <NavLink to={"/about"}>סיפורי הצלחה</NavLink>
+            <NavLink to={"/successStories"}>סיפורי הצלחה</NavLink>
             <br />
             <NavLink to={"/about"}>מי אנחנו</NavLink>
+            <br />
+            <NavLink to={"/employees "}> עובדים</NavLink>
 
 
             {/* </ul> */}

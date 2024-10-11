@@ -5,6 +5,7 @@ import { ShoesCard } from "../../HomeArea/ShoesCard/ShoesCard";
 import YouTube from "../../HomeArea/YouTube/YouTube";
 import "./Layout.css";
 import Home from "../../HomeArea/Home/Home";
+import { Routing } from "../Routing/Routing";
 
 function Layout(): JSX.Element {
     return (
@@ -15,9 +16,7 @@ function Layout(): JSX.Element {
                 <Links />
             </aside>
             <main>
-
-                <Home/>
-
+                <Routing />
             </main>
             <footer><Footer /></footer>
 
