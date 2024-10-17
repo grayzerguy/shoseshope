@@ -1,31 +1,34 @@
 
 import Product from "../../../Models/Products";
+import { cleanImageString } from "../../../Utils/cleanImageString";
 import "./ProductCard.css";
 
 type ProductCardProp = {
     product: Product;
 }
-function ProductCard(props: ProductCardProp): JSX.Element {
+
+function ProductCard({ product }: ProductCardProp): JSX.Element {
     return (
+
         <div className="ProductCard Box">
             <div className="ProductInfo">
-                <h2>{props.product.title}</h2>
-                <p className="Price">Price: ${props.product.price.toFixed(2)}</p>
-                <p className="Description">{props.product.description}</p>
+                <h2>{product.title}</h2>
+                <p className="Price">Price: ${product.price.toFixed(2)}</p>
+                <p className="Description">{product.description}</p>
                 <div className="CategoryInfo">
-                    <p>Category: {props.product.category.name}</p>
-                    <img src={props.product.category.image} alt={props.product.category.name} className="CategoryImage" />
+                    <p>Category: {product.category.name}</p>
+                    <img src={product.category.image} alt={product.category.name} className="CategoryImage" />
                 </div>
                 <p className="DateInfo">
-                    Created: {new Date(props.product.creationAt).toLocaleDateString()}
+                    Created: {new Date(product.creationAt).toLocaleDateString()}
                     <br />
-                    Updated: {new Date(props.product.updatedAt).toLocaleDateString()}
+                    Updated: {new Date(product.updatedAt).toLocaleDateString()}
                 </p>
             </div>
             <div className="ProductImages">
-                {props.product.images.length > 0 ? (
-                    props.product.images.map((image) => (
-                        <img key={props.product.id} src={image} alt={`${props.product.title}`} className="ProductImage" />
+                {product.images.length > 0 ? (
+                    product.images.map((image, index) => (
+                        <img key={`${product.id}-${index}`} src={cleanImageString(image)} alt={`${product.title}`} className="ProductImage" />
                     ))
                 ) : (
                     <p>No images available</p>

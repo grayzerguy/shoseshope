@@ -1,0 +1,17 @@
+.Loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* רקע לבן שקוף, אופציונלי */
+  z-index: 9999; /* להבטיח שזה מעל כל האלמנטים האחרים */
+}
+
+.Loading > img {
+  width: 100px;
+  height: 100px;
+}

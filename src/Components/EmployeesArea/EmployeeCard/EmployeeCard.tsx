@@ -1,10 +1,11 @@
+import { NavLink } from "react-router-dom";
 import EmployeeModel from "../../../Models/Employees";
 import "./EmployeeCard.css";
 
 type EmployeeCardProps = {
 
-    employee : EmployeeModel
-	
+    employee: EmployeeModel
+
 };
 
 export function EmployeeCard(props: EmployeeCardProps): JSX.Element {
@@ -21,9 +22,12 @@ export function EmployeeCard(props: EmployeeCardProps): JSX.Element {
 
             </div>
             <div>
-                <img src={props.employee.imageUrl} alt="Employee Image" />
+                <NavLink to={"details/" + (props.employee.id)}>
+                    <img src={props.employee.imageUrl} alt="Employee Image" />
+                </NavLink>
+
             </div>
-			
+
         </div>
     );
 }

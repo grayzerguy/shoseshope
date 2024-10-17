@@ -7,6 +7,9 @@ import Home from "../../HomeArea/Home/Home";
 import { SuccessStories } from "../../AboutArea/SuccessStories/SuccessStories";
 import { PageNotFound } from "../PageNotFound/PageNotFound";
 import { EmployeesList } from "../../EmployeesArea/EmployeesList/EmployeesList";
+import { EmployeeDetails } from "../../EmployeesArea/EmployeeDetails/EmployeeDetails";
+import { ProductListNew } from "../../ProduductsArea/ProductList/ProductsListNwe";
+
 
 export function Routing(): JSX.Element {
     return (
@@ -18,6 +21,9 @@ export function Routing(): JSX.Element {
                 <Route path="/about" element={<About />} />
                 <Route path="/successStories" element={<SuccessStories />} />
                 <Route path="/employees" element={<EmployeesList />} />
+                <Route path="/employees/details/:id" element={<EmployeeDetails />} />
+                <Route path="/productsNew" element={<ProductListNew />} />
+
 
                 {/* <Route path="/" element={<Home />} /> */}
                 {/* redirect */}
