@@ -9,6 +9,7 @@ import { PageNotFound } from "../PageNotFound/PageNotFound";
 import { EmployeesList } from "../../EmployeesArea/EmployeesList/EmployeesList";
 import { EmployeeDetails } from "../../EmployeesArea/EmployeeDetails/EmployeeDetails";
 import { ProductListNew } from "../../ProduductsArea/ProductList/ProductsListNwe";
+import { AddEmployee } from "../../EmployeesArea/AddEmployee/AddEmployee";
 
 
 export function Routing(): JSX.Element {
@@ -23,6 +24,8 @@ export function Routing(): JSX.Element {
                 <Route path="/employees" element={<EmployeesList />} />
                 <Route path="/employees/details/:id" element={<EmployeeDetails />} />
                 <Route path="/productsNew" element={<ProductListNew />} />
+                {/* Add employee */}
+                <Route path="/employees/new" element={<AddEmployee />} />
 
 
                 {/* <Route path="/" element={<Home />} /> */}

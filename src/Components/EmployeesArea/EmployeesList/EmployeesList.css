@@ -1,5 +1,5 @@
-.EmployeesList {
-
-    
-	
+.EmployeesList > a {
+  position: absolute;
+  right: 270px;
+  text-decoration: none;
 }
